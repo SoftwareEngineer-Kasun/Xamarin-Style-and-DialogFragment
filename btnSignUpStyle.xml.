@@ -1,0 +1,47 @@
+// this will inherit everything from btnSignInStyle.xml. The only difference will be the buttons’ gradient start and end color.
+
+<gradient android:angle="270" 
+   android:endColor="#008000" android:startColor="#008000"/>
+   
+   <selector xmlns:android = "http://schemas.android.com/apk/res/android"> 
+   <item android:state_pressed = "false"> 
+      <layer-list> 
+         <item android:right = "5dp" android:top = "5dp"> 
+            <shape> 
+               <corners android:radius = "2dp"/> 
+               <solid android:color = "#D6D6D6"/> 
+            </shape> 
+         </item>  
+         <item android:left = "2dp" android:bottom = "2dp"> 
+            <shape> 
+               <corners android:radius = "4dp"/> 
+              <gradient android:angle="270" 
+   android:endColor="#008000" android:startColor="#008000"/>
+               <stroke android:width = "1dp" android:color = "#BABABA"/> 
+               <padding android:bottom = "10dp" 
+                  android:right = "10dp" android:left = "10dp" android:top = "10dp"/> 
+            </shape>  
+         </item> 
+      </layer-list> 
+   </item> 
+   <item android:state_pressed = "true"> 
+      <layer-list> 
+         <item android:right = "5dp" android:top = "5dp"> 
+            <shape> 
+               <corners android:radius = "2dp"/> 
+               <solid android:color = "#D6D6D6"/> 
+            </shape> 
+         </item>  
+         <item android:left = "2dp" android:bottom = "2dp"> 
+            <shape> 
+               <corners android:radius = "4dp"/> 
+               <gradient android:angle="270" 
+   android:endColor="#008000" android:startColor="#008000"/>
+               <stroke android:radius = "4dp" android:color = "#BABABA"/>
+               <padding android:bottom = "10dp" 
+                  android:right = "10dp" android:left = "10dp" android:top = "10dp"/> 
+            </shape> 
+         </item> 
+      </layer-list> 
+  </item> 
+</selector>          
